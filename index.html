@@ -13,22 +13,87 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Homework</title>
+    <title>Simly Chocolate</title>
   </head>
   <body>
     <!-- #region Header -->
-    <header class="header"></header>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav-header">
+          <a href="" class="logo-header"
+            ><span class="header-text-span">SIMPLY</span> CHOCOLATE</a
+          ><svg class="chocolate-icon" width="21" height="21">
+            <use href="./images/sprite.svg#icon-chocolate"></use>
+          </svg>
+          <ul class="nav-list">
+            <li><a href="" class="nav-item-link">Home</a></li>
+            <li><a href="" class="nav-item-link">How it’s made?</a></li>
+            <li><a href="" class="nav-item-link">Chocolate is loved</a></li>
+          </ul>
+          <div class="social-link-header">
+            <a href="" class="social-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a href="" class="social-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </div>
+        </nav>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/sprite.svg#icon-menu-03"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
     <!-- #endregion Header -->
 
-    <main></main>
+    <main>
+      <!--#region HERO  -->
+      <section class="hero">
+        <div class="container hero-container">
+          <h1></h1>
+          <div class="">
+            <button class="hero-btn" type="button"></button>
+            <a href="#how-its" class="link-btn"></a>
+            <a href="#foot" class="link-btn"></a>
+          </div>
+        </div>
+      </section>
+      <!--#endregion  -->
+      <!--#region HIDDEN -->
+      <section class="hidden-title">
+        <div class="container container-hidden-title"></div>
+      </section>
+      <!--#endregion  -->
+      <!--#region SENSATION -->
+      <section class="sensation">
+        <div class="container sensation-container"></div>
+      </section>
+      <!--#endregion  -->
+      <!--#region HOW its MADE -->
+      <section id="how-its" class="how-made">
+        <div class="container how-made-container"></div>
+      </section>
+      <!--#endregion  -->
+      <!--#region USER-COMMENT -->
+      <section class="user-comment">
+        <div class="container user-container"></div>
+      </section>
+      <!--#endregion  -->
+    </main>
     <!-- #region Footer -->
 
-    <footer class="footer"></footer>
+    <footer id="foot" class="footer"></footer>
 
     <!-- #endregion Footer -->
   </body>
