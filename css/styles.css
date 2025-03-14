@@ -64,9 +64,9 @@ input {
   }
 }
 
-@media screen and (min-width: 1165px) {
+@media screen and (min-width: 1166px) {
   .container {
-    max-width: 1165px;
+    max-width: 1166px;
     padding: 0 15px;
   }
 }
@@ -103,8 +103,13 @@ input {
 .burger-icon {
   fill: transparent;
   stroke: #111;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.burger-icon:hover,
+.burger-icon:focus {
+  stroke: #fd9222;
+}
 .burger-btn {
   background-color: transparent;
   border: none;
@@ -221,19 +226,31 @@ input {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
-  transition: background-color 250mscubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 14px 32px 0;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
 .link-btn {
   border: 1px solid #fff;
   border-radius: 100px;
-
   width: 159px;
   height: 41px;
   padding: 12px 27px;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-btn:hover,
+.link-btn:focus {
+  color: #fd9222;
+  border: 1px solid #fd9222;
 }
 
 .link-btn-scroll {
@@ -243,5 +260,71 @@ input {
   line-height: 1.16;
   letter-spacing: -0.03em;
   color: #fff;
+}
+.chocolate-icon {
+  stroke: #fd9222;
+  fill: #fff;
+}
+
+.link-scroll {
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+  width: 120px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  padding: 5px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-scroll:hover,
+.link-scroll:focus {
+  color: #fd9222;
+  background: #1e1823;
+}
+.scroll-down-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  fill: #fd9222;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-scroll:focus .scroll-down-icon,
+.link-scroll:hover .scroll-down-icon {
+  background-color: #fd9222;
+  fill: #ffffff;
+}
+/* tab */
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 671px 0 40px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(30, 24, 35, 0.4),
+        rgba(30, 24, 35, 0.4)
+      ),
+      image-set(
+        url(../images/background/chocolate-covered-cocoa-powder-tab.jpg) 1x,
+        url(../images/background/chocolate-covered-cocoa-powder-tab@2x.jpg) 2x
+      );
+  }
+  .title-hero {
+    line-height: 1.21;
+
+    width: 484px;
+  }
 }
 /* #endregion 1 Hero */
