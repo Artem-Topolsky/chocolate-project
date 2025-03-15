@@ -53,8 +53,7 @@ input {
 }
 
 .container {
-  min-width: 320px;
-  max-width: 375px;
+  max-width: 365px;
   padding: 0 16px;
   margin: 0 auto;
 }
