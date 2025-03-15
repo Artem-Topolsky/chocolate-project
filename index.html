@@ -36,12 +36,12 @@
             <li><a href="" class="nav-item-link">Chocolate is loved</a></li>
           </ul>
           <div class="social-link-header">
-            <a href="" class="social-link">
+            <a href="https://www.twitter.com/" class="social-link">
               <svg class="social-icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
-            <a href="" class="social-link">
+            <a href="https://www.instagram.com/" class="social-link">
               <svg class="social-icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-instagram"></use>
               </svg>
@@ -58,14 +58,14 @@
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
           <button class="modal-btn" type="button" data-menu-close>
-            <svg class="icon-close" width="8" height="8">
-              <use href="./images/icons.svg#icon-close"></use>
+            <svg class="icon-close" width="12" height="12">
+              <use href="./images/icons.svg#icon-close-btn"></use>
             </svg>
           </button>
           <nav class="mobile-menu-nav">
             <ul class="mobile-list">
               <li>
-                <a href="./index.html" class="mobile-link">Home</a>
+                <a href="./index.html" class="mobile-link-orange">Home</a>
               </li>
               <li>
                 <a href="" class="mobile-link">How it’s made?</a>
@@ -77,16 +77,18 @@
           </nav>
           <ul class="mobile-list-icons">
             <li class="mobile-item-icon">
-              <a href="https://www.instagram.com/" class="link-icon"
-                ><svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
+              <a href="https://www.twitter.com/" class="social-link">
+                <svg class="social-icon-mobile" width="22" height="22">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="mobile-item-icon">
-              <a href="https://www.twitter.com/" class="link-icon"
-                ><svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
+              <a href="https://www.instagram.com/" class="social-link">
+                <svg class="social-icon-mobile" width="22" height="22">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -121,13 +123,189 @@
       </section>
       <!--#endregion  -->
       <!--#region HIDDEN -->
-      <section class="hidden-title">
-        <div class="container container-hidden-title"></div>
+      <section class="benefits">
+        <div class="container-benefits">
+          <div class="container">
+            <ul class="list-items-benefits">
+              <li class="item-benefits item-benefits-after">
+                <div class="subcontainer-for-icons">
+                  <svg href="" width="28" height="28" class="benefits-icons">
+                    <use href="./images/sprite.svg#icon-choco"></use>
+                  </svg>
+                </div>
+                <h2 class="title-benefits">Unsurpassed taste</h2>
+                <p class="benefits-parag">
+                  Crafted with the finest quality cocoa beans and a dedication
+                  to perfection, each bite is a decadent experience that simply
+                  cannot be matched. Savor the richness and complexity of our
+                  Unsurpassed Taste and discover a new level of chocolate bliss.
+                </p>
+              </li>
+              <li class="item-benefits item-benefits-after">
+                <div class="subcontainer-for-icons">
+                  <svg href="" width="28" height="28" class="benefits-icons">
+                    <use href="./images/sprite.svg#icon-coin"></use>
+                  </svg>
+                </div>
+                <h2 class="title-benefits">Affordable price</h2>
+                <p class="benefits-parag">
+                  Indulge in high-quality chocolate without breaking the bank
+                  with Simply Chocolate's selection of affordable treats. Enjoy
+                  mouth-watering truffles and velvety chocolate bars without
+                  sacrificing taste or quality. Browse our selection and indulge
+                  in affordable luxury today.
+                </p>
+              </li>
+              <li class="item-benefits">
+                <div class="subcontainer-for-icons">
+                  <svg href="" width="28" height="28" class="benefits-icons">
+                    <use href="./images/sprite.svg#icon-la-utensil-spoon"></use>
+                  </svg>
+                </div>
+                <h2 class="title-benefits">Own production</h2>
+                <p class="benefits-parag">
+                  We take pride in our own production process, ensuring that
+                  every step is carefully crafted to perfection. From selecting
+                  the finest ingredients to handcrafting each piece, our
+                  attention to detail is evident in every bite.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <!--#endregion  -->
       <!--#region SENSATION -->
       <section class="sensation">
-        <div class="container sensation-container"></div>
+        <div class="container sensation-container">
+          <div class="block-container">
+            <h2 class="sensation-title">
+              IT ALL ADDS UP TO ONE EXCEPTIONAL
+              <span class="orange-title">TASTE</span> SENSATION
+            </h2>
+            <p class="subparagraf-sensation">
+              At Simply Chocolate, we believe that the secret to exceptional
+              chocolate is in the details. From the sourcing of the finest
+              ingredients to the careful crafting of each individual piece,
+              every step of our process adds up to one exceptional taste
+              sensation.
+            </p>
+          </div>
+          <ul class="sensation-list-item">
+            <li class="sensation-item">
+              <div class="subcotainer-ingridients-one">
+                <pictures>
+                  <source
+                    srcset="
+                      ./images/photo/chocolate-bar-uni.png    1x,
+                      ./images/photo/chocolate-bar-uni@2x.png 2x
+                    "
+                    media="max-width: 732px"
+                  />
+                  <source
+                    srcset="
+                      ./images/photo/chocolate-bar.png    1x,
+                      ./images/photo/chocolate-bar@2x.png 2x
+                    "
+                    media="(min-width: 733px)"
+                  />
+                  <img
+                    src="./images/photo/chocolate-bar.png"
+                    alt="Chocolate"
+                    class="img"
+                    width="224"
+                    height="171"
+                  />
+                </pictures>
+                <p class="img-paragraf">MILK CHOCOLATE</p>
+              </div>
+            </li>
+            <li class="sensation-item">
+              <div class="subcotainer-ingridients">
+                <pictures>
+                  <source
+                    srcset="
+                      ./images/photo/milk-uni.png    1x,
+                      ./images/photo/milk-uni@2x.png 2x
+                    "
+                    media="max-width: 732px"
+                  />
+                  <source
+                    srcset="
+                      ./images/photo/milk.png    1x,
+                      ./images/photo/milk@2x.png 2x
+                    "
+                    media="(min-width: 733px)"
+                  />
+                  <img
+                    src="./images/photo/milk.png"
+                    alt="Milk"
+                    class="img"
+                    width="224"
+                    height="171"
+                  />
+                </pictures>
+                <p class="img-paragraf-second">MILK</p>
+              </div>
+            </li>
+            <li class="sensation-item">
+              <div class="subcotainer-ingridients-three">
+                <pictures class="picture">
+                  <source
+                    srcset="
+                      ./images/photo/nuts-uni.png    1x,
+                      ./images/photo/nuts-uni@2x.png 2x
+                    "
+                    media="max-width: 732px"
+                  />
+                  <source
+                    srcset="
+                      ./images/photo/nuts.png    1x,
+                      ./images/photo/nuts@2x.png 2x
+                    "
+                    media="(min-width: 733px)"
+                  />
+                  <img
+                    src="./images/photo/nuts.png"
+                    alt="Nuts"
+                    class="img"
+                    width="224"
+                    height="171"
+                  />
+                </pictures>
+                <p class="img-paragraf">NUTS</p>
+              </div>
+            </li>
+            <li class="sensation-item">
+              <div class="subcotainer-ingridients">
+                <pictures>
+                  <source
+                    srcset="
+                      ./images/photo/sweet-uni.png    1x,
+                      ./images/photo/sweet-uni@2x.png 2x
+                    "
+                    media="max-width: 732px"
+                  />
+                  <source
+                    srcset="
+                      ./images/photo/sweet.png    1x,
+                      ./images/photo/sweet@2x.png 2x
+                    "
+                    media="(min-width: 733px)"
+                  />
+                  <img
+                    src="./images/photo/sweet.png"
+                    alt="Sweet"
+                    class="img"
+                    width="224"
+                    height="171"
+                  />
+                </pictures>
+                <p class="img-paragraf-second">SEMI - SWEET CHOCOLATE</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--#endregion  -->
       <!--#region HOW its MADE -->
