@@ -280,6 +280,7 @@ input {
 .hero {
   border-radius: 30px;
   padding: 395px 0 0;
+  background-color: #1e1823;
   background-image: linear-gradient(
       to bottom,
       rgba(30, 24, 35, 0.4),
